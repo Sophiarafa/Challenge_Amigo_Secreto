@@ -1,1 +1,16 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
+let nomes = []; // lista vazia
+//referências para os elementos HTML
+let inputAmigos = document.getElementById('amigo');
+let listaAmigos = document.getElementById('listaAmigos');
+let resultado = document.getElementById('resultado');
+
+//função para o botão adicionar
+function adicionarAmigo() {
+    let nome = inputAmigos.value;
+    if (nome.trim() === ""); {
+        alert('Por favor, Digite um nome!');
+        return;
+    } else {
+        nomes.push(nome);
+    }
+}
