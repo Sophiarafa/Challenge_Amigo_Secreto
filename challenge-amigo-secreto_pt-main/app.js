@@ -13,4 +13,16 @@ function adicionarAmigo() {
     } else {
         nomes.push(nome);
     }
+    atualizarLista();
+    limparinput();
+//cria a lista de amigos com base no array
+function atualizarLista() {
+    let listaAmigosHTML = nomes.map((nome) => `<li>${nome}</li>`).join("");
+    listaAmigos.innerHTML= listaAmigosHTML;
+}
+
+//função limpar campo
+function limparinput() {
+    inputAmigos.value ="";
+}
 }
