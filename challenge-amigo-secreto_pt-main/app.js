@@ -7,9 +7,9 @@ let resultado = document.getElementById('resultado');
 //função para o botão adicionar
 function adicionarAmigo() {
     let nome = inputAmigos.value;
-    if (nome.trim() === ""); {
+
+    if (nome.trim() === "") {
         alert('Por favor, Digite um nome!');
-        return;
     } else {
         nomes.push(nome);
     }
